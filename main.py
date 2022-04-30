@@ -13,6 +13,7 @@ finished: float = 0.0
 
 window = tk.Tk()
 
+
 def add():
     first_number = float(input("First Number: "))
     second_number = float(input("Second Number: "))
@@ -48,22 +49,25 @@ def div():
     print(dividend)
 
 
-# operation selection
-operation = input("enter operation (+ - / * ^): ")
-if "+" in operation:
-    add()
-    Valid = True
-elif "-" in operation:
-    sub()
-    valid = True
-elif "*" in operation:
-    mul()
-    valid = True
-elif "/" in operation:
-    div()
-    valid = True
-elif "^" in operation:
-    exp()
-    valid = True
-else:
+match operation:
+    case "+":
+        add()
+        valid = True
+
+    case "-":
+        sub()
+        valid = True
+    case "*":
+        mul()
+        valid = True
+    case "/":
+        div()
+        valid = True
+    case "^":
+        exp()
+if valid:
+    sys.quit()
+elif not valid:
     sys.exit("Fatal Error: Invalid Input! Error Code 1 :(")
+else:
+    sys.exit("Fatal Error: Corrupted variable('valid')! Error Code 2 :()")

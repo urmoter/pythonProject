@@ -11,3 +11,4 @@
 Use the issues tab or please contace me at <sesdespacito@gmail.com>
 
 I am current unsure of update frequency,but **issues or vulnerabilities will be fixed As _soon as possible!_**
+Please have patience I am only one person and have a very busy schedule!
